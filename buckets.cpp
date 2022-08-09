@@ -24,7 +24,7 @@ int detect_ranges(std::vector<int> samples){
            OutputMap[str] =  count;
            count=1;
         }
+	}
 	print_Output();	
 	return 1;
-  }
 }
