@@ -6,10 +6,10 @@ void print_Output(){
    }
 }
 void sortrange(std::vector<int> &samples){
-	qsort(samples.begin(), samples.end());
+	//sort(samples.begin(), samples.end());
 }
 int detect_ranges(std::vector<int> samples){
-	sortrange(samples);
+	//sortrange(samples);
 	int count = 1;
     std::string str;
     for (int i = 0; i < samples.size(); i++){
