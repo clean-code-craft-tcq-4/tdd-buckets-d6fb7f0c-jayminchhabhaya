@@ -9,7 +9,7 @@ void sortrange(std::vector<int> &samples){
 	sort(samples.begin(), samples.end());
 }
 int detect_ranges(std::vector<int> samples){
-	sortrange(sortrange);
+	sortrange(samples);
 	int count = 1;
     std::string str;
     for (int i = 0; i < samples.size(); i++){
@@ -26,4 +26,5 @@ int detect_ranges(std::vector<int> samples){
         }
 	print_Output();	
 	return 1;
+  }
 }
