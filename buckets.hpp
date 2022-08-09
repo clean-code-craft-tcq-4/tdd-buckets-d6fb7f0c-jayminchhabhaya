@@ -1,2 +1,2 @@
-#includes<iostream>
+#include<iostream>
 int detect_ranges();
