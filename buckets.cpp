@@ -1,7 +1,7 @@
 #include "buckets.hpp"
 void print_Output(){
    std::cout<<"Range, Readings"<<std::endl;
-   for(auto x: New_Map){
+   for(auto x: OutputMap){
       std::cout << x.first << "   " << x.second <<std::endl;
    }
 }
