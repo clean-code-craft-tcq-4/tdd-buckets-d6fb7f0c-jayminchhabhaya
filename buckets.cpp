@@ -1,4 +1,5 @@
 #include "buckets.hpp"
+std::map<std::string, int>OutputMap;
 void print_Output(){
    std::cout<<"Range, Readings"<<std::endl;
    for(auto x: OutputMap){
