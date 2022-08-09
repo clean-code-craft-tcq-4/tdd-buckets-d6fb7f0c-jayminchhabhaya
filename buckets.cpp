@@ -6,7 +6,7 @@ void print_Output(){
    }
 }
 void sortrange(std::vector<int> &samples){
-	std::sort(samples.begin(), samples.end());
+	qsort(samples.begin(), samples.end());
 }
 int detect_ranges(std::vector<int> samples){
 	sortrange(samples);
