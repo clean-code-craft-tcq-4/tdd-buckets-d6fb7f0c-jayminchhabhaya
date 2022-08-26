@@ -28,7 +28,7 @@ TEST_CASE("TEST_CASE 3") {
 }
 
 TEST_CASE("TEST_CASE 4") {
-    vector<uint32_t> samples {1,1,1,1,1,1};
+    std::vector<uint32_t> samples {1,1,1,1,1,1};
     auto objectofranges = GetRanges(samples);
     REQUIRE(objectofranges.size() == 1);
     REQUIRE(objectofranges[0] == "1-1, 6");
