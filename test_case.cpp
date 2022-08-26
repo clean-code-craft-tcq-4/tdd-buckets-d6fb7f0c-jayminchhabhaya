@@ -3,7 +3,12 @@
 #include "test/catch.hpp"
 #include "buckets.hpp"
 
-TEST_CASE("TEST_CASE I") {
+TEST_CASE("TEST_CASE 1") {
+    std::vector<int> samples{};
+  REQUIRE(detect_ranges(samples) == 1);
+}
+
+TEST_CASE("TEST_CASE 2") {
   std::vector<int> samples{3, 3, 4, 5, 10, 11, 12};
   REQUIRE(detect_ranges(samples) == 1);
 

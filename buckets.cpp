@@ -6,11 +6,8 @@ void print_Output(){
       std::cout << x.first << "   " << x.second <<std::endl;
    }
 }
-void sortrange(std::vector<int> &samples){
-	//sort(samples.begin(), samples.end());
-}
 int detect_ranges(std::vector<int> samples){
-	//sortrange(samples);
+	std::sort(samples.begin(), samples.end());
 	int count = 1;
     std::string str;
     for (int i = 0; i < samples.size(); i++){
