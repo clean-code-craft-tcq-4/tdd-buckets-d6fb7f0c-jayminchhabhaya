@@ -9,9 +9,6 @@ void print_Output(std::map<std::string, int>OutputMap){
 
 std::map<std::string, int> detect_ranges(std::vector<int> samples){
 	sort(samples.begin(), samples.end());
-	for (int i = 0; i < samples.size(); i++) {
-        std::cout << samples.at(i) << ' ';
-    }
 	int count = 1;
     std::string str="";
 	std::map<std::string, int>OutputMap{};
