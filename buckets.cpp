@@ -28,7 +28,7 @@ int detect_ranges(std::vector<int> samples){
 }
 std::vector<std::string> GetRanges(std::vector<int> samples)
 {
-	vector<std::string> returnrangeList {};
+	std::vector<std::string> returnrangeList {};
 	if(detect_ranges(samples))
 	{
 		for(auto x: OutputMap){
