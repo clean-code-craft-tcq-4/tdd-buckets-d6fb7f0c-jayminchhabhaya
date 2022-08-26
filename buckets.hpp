@@ -11,5 +11,5 @@ std::vector<std::string> GetRanges(std::vector<int> samples);
 class MatadataRange
 {
 	public:
-		std::vector<string> m_strrange;
+		std::vector<std::string> m_strrange;
 };
