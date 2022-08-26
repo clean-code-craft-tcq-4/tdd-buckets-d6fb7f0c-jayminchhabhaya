@@ -6,6 +6,7 @@ void print_Output(){
       std::cout << x.first << "   " << x.second <<std::endl;
    }
 }
+
 int detect_ranges(std::vector<int> samples){
 	sort(samples.begin(), samples.end());
 	int count = 1;

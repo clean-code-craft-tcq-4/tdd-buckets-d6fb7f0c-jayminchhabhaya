@@ -19,3 +19,4 @@ TEST_CASE("TEST_CASE 2") {
   REQUIRE(objectofranges.size() == 1);
   REQUIRE(objectofranges[0] == "1-4, 4");
 }
+
