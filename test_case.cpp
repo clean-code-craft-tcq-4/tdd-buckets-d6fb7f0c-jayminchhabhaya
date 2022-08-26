@@ -22,9 +22,9 @@ TEST_CASE("TEST_CASE 3") {
     std::vector<int> samples {1,3,4,2,6,7,9,8,12,11,13};
     auto objectofranges = GetRanges(samples);
     REQUIRE(objectofranges.size() == 3);
-    REQUIRE(objectofranges[2] == "1-4, 4");
+    REQUIRE(objectofranges[0] == "1-4, 4");
+    REQUIRE(objectofranges[2] == "6-9, 4");
     REQUIRE(objectofranges[1] == "11-13, 3");
-    REQUIRE(objectofranges[0] == "6-9, 4");
 }
 
 TEST_CASE("TEST_CASE 4") {
