@@ -37,7 +37,5 @@ std::vector<std::string> GetRanges(std::vector<int> samples)
         }
 	}
 	OutputMap.clear();
-	std::cout<<"---------------------------\n";
-	std::cout<<returnrangeList[0];
 	return returnrangeList;
 }

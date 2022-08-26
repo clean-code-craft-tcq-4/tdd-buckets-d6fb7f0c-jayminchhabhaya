@@ -8,5 +8,6 @@ TEST_CASE("TEST_CASE 2") {
   REQUIRE(detect_ranges(samples) == 1);
   auto objectofranges = GetRanges(samples);
   //REQUIRE(objectofranges.size() == 1);
+  REQUIRE(objectofranges[1] == "10-12, 3");
   REQUIRE(objectofranges[0] == "3-5, 4");
 }
