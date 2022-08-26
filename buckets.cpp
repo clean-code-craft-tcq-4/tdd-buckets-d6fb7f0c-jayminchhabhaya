@@ -31,7 +31,7 @@ std::map<std::string, int> detect_ranges(std::vector<int> samples){
 std::vector<std::string> GetRanges(std::vector<int> samples)
 {
 	std::vector<std::string> returnrangeList {};
-	std::map<std::string, int>matadatamap = detect_ranges(samples))
+	std::map<std::string, int>matadatamap = detect_ranges(samples);
 	
 	for(auto x: matadatamap){
 		std::string metadata = x.first + ", " + std::to_string(x.second);
