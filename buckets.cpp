@@ -7,7 +7,7 @@ void print_Output(){
    }
 }
 int detect_ranges(std::vector<int> samples){
-	std::sort(samples.begin(), samples.end());
+	sort(samples.begin(), samples.end());
 	int count = 1;
     std::string str;
     for (int i = 0; i < samples.size(); i++){
