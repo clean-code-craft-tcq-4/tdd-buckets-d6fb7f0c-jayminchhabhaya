@@ -1,5 +1,5 @@
 #include "buckets.hpp"
-std::map<std::string, int>OutputMap{};
+
 void print_Output(std::map<std::string, int>OutputMap){
    std::cout<<"Range, Readings"<<std::endl;
    for(auto x: OutputMap){
@@ -11,7 +11,7 @@ std::map<std::string, int> detect_ranges(std::vector<int> samples){
 	sort(samples.begin(), samples.end());
 	int count = 1;
     std::string str="";
-	
+	std::map<std::string, int>OutputMap{};
     for (int i = 0; i < samples.size(); i++){
         if(samples[i]+1 >= (samples[i+1])){
             if(count == 1){
@@ -21,11 +21,14 @@ std::map<std::string, int> detect_ranges(std::vector<int> samples){
         }
         else{
            str +="-" + std::to_string(samples[i]);
-           OutputMap[str] = count;
+           OutputMap[str] =  count;
            count=1;
         }
 	}
-	print_Output(OutputMap);	
+	for(auto x: OutputMap){
+      std::cout << x.first << "   " << x.second <<std::endl;
+   }
+	//print_Output(OutputMap);	
 	return OutputMap;
 }
 std::vector<std::string> GetRanges(std::vector<int> samples)
