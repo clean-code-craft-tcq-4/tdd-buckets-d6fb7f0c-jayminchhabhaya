@@ -13,7 +13,7 @@ std::map<std::string, int> detect_ranges(std::vector<int> samples){
     std::string str="";
 	std::map<std::string, int>OutputMap{};
     for (int i = 0; i < samples.size(); i++){
-        if(samples[i]+1 >= (samples[i+1])){
+        if((i+1)!=samples.size() && samples[i]+1 >= (samples[i+1])){
             if(count == 1){
              str =std::to_string(samples[i]);   
             }
