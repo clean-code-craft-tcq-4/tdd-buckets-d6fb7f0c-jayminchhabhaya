@@ -23,6 +23,6 @@ TEST_CASE("TEST_CASE 3") {
     auto objectofranges = GetRanges(samples);
     REQUIRE(objectofranges.size() == 3);
     REQUIRE(objectofranges[2] == "1-4, 4");
-    REQUIRE(objectofranges[1] == "6-9, 4");
-    REQUIRE(objectofranges[0] == "11-13, 3");
+    REQUIRE(objectofranges[1] == "11-13, 3");
+    REQUIRE(objectofranges[0] == "6-9, 4");
 }
