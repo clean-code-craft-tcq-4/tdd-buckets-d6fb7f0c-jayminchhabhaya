@@ -4,7 +4,7 @@
 #include "buckets.hpp"
 
 TEST_CASE("TEST_CASE 1") {
-  std::vector<int> samples{3, 3, 5, 4, 10, 11, 12};
+  std::vector<int> samples{3, 3, 4, 5, 10, 11, 12};
   auto objectofranges = GetRanges(samples);
   REQUIRE(objectofranges.size() == 2);
   REQUIRE(objectofranges[0] == "10-12, 3");
