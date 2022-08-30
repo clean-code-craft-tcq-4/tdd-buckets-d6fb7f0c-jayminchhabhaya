@@ -12,7 +12,7 @@ int binary_to_number(int binary_digits[], int number_of_digits){
 
     return output;
 }
-int A2DConvert(float exptectedValue)
+int A2DConvert(int numberValue)
 {
-  return round((10 * exptectedValue)/ 4094);
+  return round((10 * (float)numberValue)/ 4094);
 }
