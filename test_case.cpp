@@ -2,6 +2,7 @@
 
 #include "test/catch.hpp"
 #include "buckets.hpp"
+#include "A2Dconverter.hpp"
 
 TEST_CASE("TEST_CASE 1") {
   std::vector<int> samples{3, 3, 4, 5, 10, 11, 12};
@@ -32,4 +33,11 @@ TEST_CASE("TEST_CASE 4") {
     auto objectofranges = GetRanges(samples);
     REQUIRE(objectofranges.size() == 1);
     REQUIRE(objectofranges[0] == "1-1, 6");
+}
+
+TEST_CASE("TEST_CASE 5") {
+    int BinaryValues[] = {0,1,0,0,0, 1,1,1,1, 0,1,0};
+    int numberValue = binary_to_number(BinaryValues,12);
+	REQUIRE(numberValue == 1146);
+	REQUIRE(A2DConvert(numberValue) == 3);
 }
