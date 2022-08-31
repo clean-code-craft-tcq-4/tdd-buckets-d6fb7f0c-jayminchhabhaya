@@ -20,9 +20,17 @@ std::map<std::string, int> detect_ranges(std::vector<int> samples){
           count++;
         }
         else{
-           str +="-" + std::to_string(samples[i]);
+		   if(count != 1)
+		   {
+             str +="-" + std::to_string(samples[i]);
+		   }
+		   else
+		   {
+			 str += std::to_string(samples[i]);  
+		   }
            OutputMap[str] =  count;
            count=1;
+		   str = "";
         }
 	}
 	print_Output(OutputMap);	

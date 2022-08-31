@@ -16,3 +16,11 @@ int A2DConvert(int numberValue)
 {
   return round((10 * (float)numberValue)/ 4094);
 }
+std::vector<int> Getamperereadings(std::vector<int> bitintvect)
+{
+    std::vector<int>samples{};
+   for (int i = 0; i < bitintvect.size(); i++){
+    samples.push_back(A2DConvert(bitintvect[i]));
+   }
+   return samples;
+}
